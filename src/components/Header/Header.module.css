@@ -1,0 +1,14 @@
+.headerContainer{
+    display: flex;
+    width: 100%;
+
+}
+.headerContainer h1 {
+    color: #54595E;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-left: 20px;
+}
+.arrow {
+    margin-left: auto;
+}
