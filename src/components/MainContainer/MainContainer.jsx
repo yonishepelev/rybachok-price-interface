@@ -5,7 +5,9 @@ import {FilterZone} from "../FilterZone/FilterZone";
 import {getItemCategories, getMarketplaceItemsWithPrices} from "../Api/api";
 import {ListCheckbox} from "../ListCheckbox/ListCheckbox";
 import {ToggleSwitch} from "../ToggleSwitch/ToggleSwitch";
-import { TableItemPrices} from "../TableItemPrices/TableItemPrices";
+import {TableItemPrices} from "../TableItemPrices/TableItemPrices";
+import {DatePeriod} from "../DatePeriod/DatePeriod";
+
 const tableHeader = ['Наименование', 'Закупка', 'Розница', 'Наценка',
     'OZON', 'Наценка', 'Период', 'ЯМ', 'Наценка', 'Период', 'WB', 'Наценка', 'Период'];
 
@@ -13,6 +15,10 @@ export const MainContainer = () => {
     const [itemCategories, setItemCategories] = useState([]);
     const [itemsPrices, setItemsPrices] = useState([]);
     const [selectedItems, setSelectedItems] = useState([]);
+    const [datePeriod, setDatePeriod] = useState({
+        dateFrom: new Date(),
+        dateTo: new Date()
+    })
 
     useEffect(() => {
         const data = getItemCategories().map((el) => {
@@ -44,8 +50,34 @@ export const MainContainer = () => {
             setItemCategories([...itemCategories]);
 
         }}/>
+        <div>Выбрать всю номенклатуру</div>
+        <ToggleSwitch onChangeToggle={(checked)=>{
+            if (checked){
+                const nS = itemsPrices.map((e)=>e[0]);
+                setSelectedItems(nS);
+            } else {
+                setSelectedItems([]);
+            }
+        }
+        }/>
+        <DatePeriod datePeriod={datePeriod} setDatePeriod={setDatePeriod}/>
+        <TableItemPrices data={itemsPrices} selectedItems={selectedItems} tableHeader={tableHeader}
+                         onChangeCheckbox={( newValue, index) => {
 
-        <TableItemPrices data={itemsPrices} selectedItems={selectedItems} tableHeader={tableHeader}/>
+                             const item_name = itemsPrices[index][0];
+                             if (newValue) {
+                                 selectedItems.push(item_name);
+                                 setSelectedItems([...selectedItems]);
+                             } else {
+                                 const newSelected = selectedItems.filter(el=>el !== item_name);
+                                 setSelectedItems(newSelected);
+                             }
+                         }
+                         }
+        />
+
+
+
     </div>
 
 }

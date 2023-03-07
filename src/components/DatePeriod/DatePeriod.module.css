@@ -1,0 +1,13 @@
+.datePeriodContainer{
+    display: flex;
+}
+.label {
+    padding-bottom: 4px;
+}
+.dateToContainer{
+    margin-left: 28px;
+}
+.buttonContainer{
+    margin-top: 19px;
+    text-align: center;
+}

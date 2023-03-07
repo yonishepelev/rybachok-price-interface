@@ -3,77 +3,47 @@
     margin-bottom: 20px;
     border: 1px solid #dddddd;
     border-collapse: collapse;
+    font-size: 0.75rem;
 }
 
-.tableth {
+.thead {
+    z-index: 2;
+    background: #efefef;
+    position: sticky;
+}
+
+.thead th {
     position: sticky;
     top: -1px;
-
-    z-index: 1;
     font-weight: bold;
-    padding: 5px;
     background: #efefef;
-
+    z-index: 2;
     color: #696969;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    font-family: 'Roboto', serif;
-
-   border-width: 1px 0px 0px 1px;
+    padding: 10px 5px;
+    border-width: 1px 0 0 1px;
     border-style: dashed;
     border-color: rgba(185, 185, 185, 0.65);
 }
 
-.tabletd {
-
-    border: 1px solid #dddddd;
+.tableTr td {
+    border: 1px dashed #dddddd;
     padding: 5px;
     text-align: center;
-    font-family: 'Roboto', serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 12px;
+    font-weight: bold;
     line-height: 130%;
 
 }
 
 .ozon {
-    color: blue;
-
-    font-weight: bold;
-    padding: 5px;
-    background: #efefef;
-
-    padding-top: 15px;
-    padding-bottom: 15px;
-    font-family: 'Roboto', serif;
-
-
-    border-width: 1px 0px 0px 1px;
-    border-style: dashed;
-    border-color: rgba(185, 185, 185, 0.65);
+    color: blue !important;
 }
 
 .wb {
-    color: #C71585;
-
-    font-weight: bold;
-    padding: 5px;
-    background: #efefef;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    font-family: 'Roboto', serif;
-
-    border-width: 1px 0px 0px 1px;
-    border-style: dashed;
-    border-color: rgba(185, 185, 185, 0.65);
+    color: #C71585 !important;
 }
+
 .tableContainer {
-    max-height: 200px;
+    max-height: 430px;
     overflow: auto;
     position: relative;
-}
-.tableContainer th {
-
-
 }
