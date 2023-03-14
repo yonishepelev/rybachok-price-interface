@@ -4,4 +4,42 @@
     /*overflow: hidden;*/
     padding: 1rem;
     box-sizing: border-box;
+    border: 0;
+}
+.containerPrice {
+    display: flex;
+    /*justify-content: space-evenly;*/
+    margin-top: 22px;
+    margin-left: 17px;
+}
+.containerPriceR {
+    display: flex;
+    justify-content: space-around;
+}
+.listCheckboxContainer {
+    width: 564px;
+    overflow: auto;
+    height: 143px;
+    margin-left: 32px;
+    background: rgba(217, 217, 217, 0.11);
+}
+.listItemContainerMarket {
+    width: 187px;
+    height: 84px;
+    overflow: auto;
+    background: rgba(217, 217, 217, 0.11);
+    margin-left: 36px;
+    margin-top: 27px;
+}
+.containerText {
+    display: flex;
+    font-family: 'Inter', 'serif' ;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #6C757D;
+}
+.containerToggleSwitch {
+    margin-left: 55px;
 }

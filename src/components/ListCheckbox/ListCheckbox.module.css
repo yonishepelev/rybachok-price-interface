@@ -1,6 +1,14 @@
-.listCheckboxContainer {
+
+.listItemContainer {
+    margin-bottom: 7px;
 
 }
-.listItemContainer {
-    margin-bottom: 5px;
+.listTextContainer {
+    font-family: 'Inter', 'serif';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #6C757D;
 }
+

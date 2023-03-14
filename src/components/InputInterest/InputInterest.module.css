@@ -1,0 +1,24 @@
+.containerInputInterest {
+    display: flex;
+    flex-direction: column;
+    margin-top: 9px;
+    margin-left: 96px;
+}
+.containerInput {
+    width: 113px;
+    height: 34px;
+    border-radius: 4px;
+    border: 1px solid #c5c5c5;
+    margin-top: 6px;
+    font-family: 'Trebuchet MS', 'serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    color: #6B6B6B;
+}
+
+.buttonContainer {
+    margin-top: 21px;
+    text-align: center;
+}

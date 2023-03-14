@@ -31,3 +31,18 @@ export const getMarketplaceItemsWithPrices = () => {
         ['ВОБЛЕР BIG JONNY VOBBLER EG-205B#JV003 15СМ DEFAULT:WEIGHT', 935, 430, '53%', 935, 430, '53%', 935, 430, '53%', 935, 430, '53%'],
     ];
 }
+export const getMarketplaceShops = () => {
+    return [
+        {shop_name: "OZON"},
+        {shop_name: "WILDBERRIES"},
+        {shop_name: "ЯНДЕКС МАРКЕТ"},
+        {shop_name: "ЯНДЕКС МАРКЕТ"},
+        {shop_name: "ЯНДЕКС МАРКЕТ"},
+        {shop_name: "ЯНДЕКС МАРКЕТ"},
+        {shop_name: "ЯНДЕКС МАРКЕТ"},
+        {shop_name: "ЯНДЕКС МАРКЕТ"},
+        {shop_name: "ЯНДЕКС МАРКЕТ"},
+        {shop_name: "ЯНДЕКС МАРКЕТ"},
+
+    ]
+}

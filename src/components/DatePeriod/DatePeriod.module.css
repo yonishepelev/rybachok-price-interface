@@ -1,5 +1,7 @@
 .datePeriodContainer{
     display: flex;
+    margin-top: 11px;
+    margin-left: 27px;
 }
 .label {
     padding-bottom: 4px;

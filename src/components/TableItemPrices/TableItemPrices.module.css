@@ -46,4 +46,6 @@
     max-height: 430px;
     overflow: auto;
     position: relative;
+    margin-left: 17px;
+    margin-top: 6px;
 }
